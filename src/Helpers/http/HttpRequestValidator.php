@@ -38,7 +38,7 @@ class HttpRequestValidator
             throw new NotFoundException('validation class does not exist');
         }
 
-        $validation = new $validationFullClassName($validationMethod, $this->validationService, $fields, $headers);
+        $validation = new $validationFullClassName($this->validationService, $fields, $headers);
 
         if (!method_exists($validation, $validationMethod)) {
             throw new NotFoundException('validation method ' . $validationMethod . ' does not exist');
