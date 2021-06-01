@@ -1,0 +1,33 @@
+{
+    "name": "gvera/validations",
+    "description": "gv validations",
+    "license": "MIT",
+    "keywords": ["gv", "validations"],
+    "authors": [
+        {
+            "name": "Guido Vera",
+            "email": "vera.a.guido@gmail.com"
+        }
+    ],
+    "config": {
+        "platform" :{
+            "php": "7.4.0"
+        }
+    },
+    "require": {
+        "gvera/exceptions": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit":          "8.5.1",
+        "pcov/clobber": "^2.0"
+    },
+    "scripts": {
+    },
+    "autoload": {
+      "psr-4": {
+        "Gvera\\": [
+          "src/"
+        ]
+      }
+    }
+}
